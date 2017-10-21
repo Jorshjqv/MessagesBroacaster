@@ -1,7 +1,10 @@
 package com.communicom.messaging.messages.signals;
 
 public enum SignalType {
-	MANUAL_DATA,
-	AUTOMATIC_DATA,
-	PING
+	PING_REQUEST,
+	PING_RESPONSE,
+	AUTOMATIC_DATA_REQUEST,
+	AUTOMATIC_DATA_RESPONSE,
+	MANUAL_DATA_REQUEST,
+	MANUAL_DATA_RESPONSE
 }

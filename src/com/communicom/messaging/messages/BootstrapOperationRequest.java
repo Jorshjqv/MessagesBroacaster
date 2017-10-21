@@ -1,16 +1,12 @@
 package com.communicom.messaging.messages;
 
-import java.time.LocalDateTime;
-
-public class PingServerResponse extends RequestResponse{
+public class BootstrapOperationRequest extends RequestResponse{
+    
 	private String sourceAddress;
-	private String targetAddress;
-	
-	public PingServerResponse(){
-		this.messageNumber = 2;
-		this.emisionTime = LocalDateTime.now();
-	}
-	
+    private String targetAddress;
+    private String version;
+    
+    
 	public String getSourceAddress() {
 		return sourceAddress;
 	}
@@ -23,6 +19,12 @@ public class PingServerResponse extends RequestResponse{
 	public void setTargetAddress(String targetAddress) {
 		this.targetAddress = targetAddress;
 	}
-	
-	
+	public String getVersion() {
+		return version;
+	}
+	public void setVersion(String version) {
+		this.version = version;
+	}
+    
+    
 }

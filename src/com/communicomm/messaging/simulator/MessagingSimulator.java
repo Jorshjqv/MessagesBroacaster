@@ -22,7 +22,7 @@ public class MessagingSimulator {
 			printOptions();
 			option = getAction();
 			processOption(option);
-		} while (option != 4);
+		} while (option != 3);
 	}
 
 	private static void printOptions() {
@@ -53,6 +53,8 @@ public class MessagingSimulator {
 		System.out.println("2. Ping Server Response");
 		System.out.println("3. Set Wait For Signal Request");
 		System.out.println("4. Set Wait For Signal Response");
+		System.out.println("5. Bootstrap Operation Request");
+		System.out.println("6. Bootstrap Operation Response");
 		return Integer.parseInt(br.readLine());
 	}	
 	

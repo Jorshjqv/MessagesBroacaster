@@ -4,11 +4,9 @@ import java.time.LocalDateTime;
 
 import com.communicom.messaging.messages.signals.SignalType;
 
-public class SetWaitForSignalResponse {
-	private int messageNumber;
+public class SetWaitForSignalResponse extends RequestResponse{
 	private String sourceAddress;
 	private String targetAddress;
-	private LocalDateTime emisionTime;
 	private SignalType signal;
 	private String signalExpectedValue;
 	private String signalReceivedValue;
@@ -30,13 +28,7 @@ public class SetWaitForSignalResponse {
 	public void setTargetAddress(String targetAddress) {
 		this.targetAddress = targetAddress;
 	}
-	public LocalDateTime getEmisionTime() {
-		return emisionTime;
-	}
-
-	public int getMessageNumber() {
-		return messageNumber;
-	}
+	
 
 	public SignalType getSignal() {
 		return signal;
